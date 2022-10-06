@@ -39,10 +39,13 @@ btn.onclick = function () {
 }
 
 
-
 // Year Now In Footer
 let year = document.getElementById('year-now');
 
 let dateNow = new Date();
 
 year.innerHTML = dateNow.getFullYear();
+
+
+//Wow Plugin
+new WOW().init();

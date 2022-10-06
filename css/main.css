@@ -178,9 +178,9 @@ header.sticky{
 }
 
 .about .about-img img{
-   width: 100%;
-   height: auto;
-   padding-top: 80px;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
 }
 
 .about .about-text h3{
@@ -273,10 +273,7 @@ header.sticky{
 }
 /* END FOOD MENU */
 
-
 /* START TEAM */
-
-
 .team{
     padding-left: 10%;
     padding-right: 10%;
@@ -372,22 +369,21 @@ header.sticky{
 }
 
 .subscribe .container{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 5rem;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 4rem;
     align-items: center;
 }
 
 .news-content form{
     position: relative;
-    width: 350px;
-    max-width: 100%;
+    width: 320px;
 }
 
 .news-content input[type="email"] {
     display: inline-block;
     width: 100%;
-    padding: 16px 130px 16px 15px;
+    padding: 16px 30px 16px 15px;
     border: 2px solid var(--main-color);
     outline: none;
     border-radius: 30px;
@@ -396,15 +392,14 @@ header.sticky{
 
 .news-content input[type="submit"]{
     position: absolute;
-    display: inline-block;
+    top: 41px;
+    right: 1px;
     outline: none;
     border: none;
     padding: 17px 30px;
     border-radius: 30px;
     background: var(--main-color);
     color: #fff;
-    top: 41px;
-    right: 1px;
     cursor: pointer;
 }
 
@@ -425,8 +420,15 @@ header.sticky{
     line-height: 1.7;
     font-size: 17px;
 }
-/* END SUBSCRIBE */
 
+@media screen and (max-width: 900px)  {
+    
+    .subscribe .container{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+}
+/* END SUBSCRIBE */
 
 /* START BLOG */
 .blog{
